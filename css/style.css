@@ -222,3 +222,87 @@ footer{
 .footer__link:hover{
     color: #EF4423
 }
+
+/* Адаптация под экраны до 768px */
+@media (max-width: 768px) {
+    .header__wrap,
+    .menu,
+    .news__wrap,
+    .end__wrap,
+    .footer__wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    .box__one {
+        width: 100%;
+    }
+
+    .img__one img,
+    .end__img img,
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .end__wrap {
+        gap: 20px;
+    }
+
+    .end__text {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+/* Адаптация под экраны до 480px */
+@media (max-width: 480px) {
+    .menu__link,
+    .footer__link {
+        font-size: 16px;
+    }
+
+    .desc_h, .desc_h2 {
+        font-size: 17px;
+    }
+
+    .box__text, .box__text2 {
+        font-size: 14px;
+    }
+
+    .end__p {
+        font-size: 18px;
+    }
+
+    .end__text {
+        font-size: 16px;
+    }
+
+    .news {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .footer__wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu__end {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer__link {
+        font-size: 16px;
+    }
+}
+
